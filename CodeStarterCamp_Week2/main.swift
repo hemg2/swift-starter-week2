@@ -7,9 +7,8 @@
 //
 
 import Foundation
-// step1
 
-// step2
+
 func compare(myNumbers: [Int]) {
     let randomNumbers = drawRandomNumber()
     var lotteryNumbers: [Int] = []
@@ -31,13 +30,6 @@ func compare(myNumbers: [Int]) {
         print("아쉽지만 겹치는 번호가 없습니다.")
     }
 }
-//compare(myNumbers: [3, 5, 12, 22, 26, 31])
-
-
-
-
-
-// step3
 
 
 var lottoNumber = [String: [Int]]()
@@ -65,7 +57,7 @@ func createLotteryRounds(round: Int) {
         drawRandomNumber()
     }
 }
-createLotteryRounds(round: 5)
+
 func checkNumber(checkRound: Int) {
     if let check = lottoNumber["\(checkRound)회차"]  {
         print("\(checkRound)회차의 로또 당첨 번호는 \(check)입니다.")
@@ -73,6 +65,8 @@ func checkNumber(checkRound: Int) {
         print("추첨 회차가 아닙니다")
     }
 }
+
+createLotteryRounds(round: 5)
 checkNumber(checkRound: 1)
 checkNumber(checkRound: 2)
 checkNumber(checkRound: 3)
